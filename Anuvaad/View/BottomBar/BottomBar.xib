@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomBar" customModule="Anuvaad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-Tt-c4m">
+                    <rect key="frame" x="5" y="5" width="364" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sj-j1-4T8">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="45"/>
+                            <color key="tintColor" name="UnselectedTintColor"/>
+                            <state key="normal" image="house" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-EL-Owq">
+                            <rect key="frame" x="106" y="0.0" width="46" height="45"/>
+                            <color key="tintColor" name="UnselectedTintColor"/>
+                            <state key="normal" image="heart" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYc-MY-5dB">
+                            <rect key="frame" x="212" y="0.0" width="46" height="45"/>
+                            <color key="tintColor" name="UnselectedTintColor"/>
+                            <state key="normal" image="mic" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ7-1p-BDC">
+                            <rect key="frame" x="318" y="0.0" width="46" height="45"/>
+                            <color key="tintColor" name="UnselectedTintColor"/>
+                            <state key="normal" image="gear" catalog="system"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cmu-Tt-c4m" secondAttribute="trailing" constant="5" id="77E-o7-UxL"/>
+                <constraint firstAttribute="bottom" secondItem="Cmu-Tt-c4m" secondAttribute="bottom" constant="5" id="Kh6-6K-qC2"/>
+                <constraint firstItem="Cmu-Tt-c4m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="R3Q-mT-PqH"/>
+                <constraint firstItem="Cmu-Tt-c4m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="ohc-Oz-iBk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="favBtn" destination="PAY-EL-Owq" id="lL5-uc-PWp"/>
+                <outlet property="homeBtn" destination="6Sj-j1-4T8" id="2KQ-Ok-01W"/>
+                <outlet property="settingsBtn" destination="IQ7-1p-BDC" id="6r4-tc-Ikb"/>
+                <outlet property="speechBtn" destination="oYc-MY-5dB" id="8J3-DS-IUr"/>
+            </connections>
+            <point key="canvasLocation" x="-497" y="-127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="mic" catalog="system" width="108" height="128"/>
+        <namedColor name="UnselectedTintColor">
+            <color red="0.77647058823529413" green="0.78431372549019607" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

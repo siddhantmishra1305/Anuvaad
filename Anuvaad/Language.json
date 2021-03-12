@@ -1,0 +1,202 @@
+[
+  {
+    "language": "af",
+    "name": "Afrikaans",
+    "country": "ZA"
+  },
+  {
+    "language": "sq",
+    "name": "Albanian",
+    "country": "AL"
+  },
+  {
+    "language": "am",
+    "name": "Amharic",
+    "country": "ET"
+  },
+  {
+    "language": "hy",
+    "name": "Armenian",
+    "country": "AM"
+  },
+  {
+    "language": "az",
+    "name": "Azerbaijani",
+    "country": "AZ"
+  },
+  {
+    "language": "eu",
+    "name": "Basque",
+    "country": "ES"
+  },
+  {
+    "language": "be",
+    "name": "Belarusian",
+    "country": "BY"
+  },
+  {
+    "language": "bn",
+    "name": "Bengali",
+    "country": "IN"
+  },
+  {
+    "language": "bs",
+    "name": "Bosnian",
+    "country": "BA"
+  },
+  {
+    "language": "bg",
+    "name": "Bulgarian",
+    "country": "BG"
+  },
+  {
+    "language": "ca",
+    "name": "Catalan",
+    "country": "ES"
+  },
+  {
+    "language": "ceb",
+    "name": "Cebuano",
+    "country": "PH"
+  },
+  {
+    "language": "ny",
+    "name": "Chichewa",
+    "country": "MW"
+  },
+  {
+    "language": "zh-CN",
+    "name": "Chinese (Simplified)",
+    "country": "CN"
+  },
+  {
+    "language": "zh-TW",
+    "name": "Chinese (Traditional)",
+    "country": "CN"
+  },
+  {
+    "language": "co",
+    "name": "Corsican",
+    "country": "FR"
+  },
+  {
+    "language": "hr",
+    "name": "Croatian",
+    "country": "HR"
+  },
+  {
+    "language": "cs",
+    "name": "Czech",
+    "country": "CZ"
+  },
+  {
+    "language": "da",
+    "name": "Danish",
+    "country": "DK"
+  },
+  {
+    "language": "nl",
+    "name": "Dutch",
+    "country": "NL"
+  },
+  {
+    "language": "en",
+    "name": "English",
+    "country": "GB"
+  },
+  {
+    "language": "et",
+    "name": "Estonian",
+    "country": "EE"
+  },
+  {
+    "language": "fi",
+    "name": "Finnish",
+    "country": "FI"
+  },
+  {
+    "language": "fr",
+    "name": "French",
+    "country": "FR"
+  },
+  {
+    "language": "fy",
+    "name": "Frisian",
+    "country": "NL"
+  },
+  {
+    "language": "gl",
+    "name": "Galician",
+    "country": "ES"
+  },
+  {
+    "language": "ka",
+    "name": "Georgian",
+    "country": "GE"
+  },
+  {
+    "language": "de",
+    "name": "German",
+    "country": "DE"
+  },
+  {
+    "language": "el",
+    "name": "Greek",
+    "country": "GR"
+  },
+  {
+    "language": "gu",
+    "name": "Gujarati",
+    "country": "IN"
+  },
+  {
+    "language": "hi",
+    "name": "Hindi",
+    "country": "IN"
+  },
+  {
+    "language": "hu",
+    "name": "Hungarian",
+    "country": "hu"
+  },
+  {
+    "language": "is",
+    "name": "Icelandic",
+    "country": "IS"
+  },
+  {
+    "language": "ig",
+    "name": "Igbo",
+    "country": "NG"
+  },
+  {
+    "language": "id",
+    "name": "Indonesian",
+    "country": "ID"
+  },
+  {
+    "language": "ga",
+    "name": "Irish",
+    "country": "IE"
+  },
+  {
+    "language": "it",
+    "name": "Italian",
+    "country": "IT"
+  },
+  {
+    "language": "ja",
+    "name": "Japanese",
+    "country": "JP"
+  },
+  {
+    "language": "kn",
+    "name": "Kannada",
+    "country": "IN"
+  },
+  {
+    "language": "vi",
+    "name": "Vietnamese",
+    "country": "VN"
+  }
+]
