@@ -36,7 +36,7 @@ struct ServerManager {
                         }
                         
                         guard let data = data else {
-                            completion(.failure(.parsingError))
+                            completion(.failure(.badRequest))
                             return
                         }
                         
@@ -44,7 +44,7 @@ struct ServerManager {
                             let result = try JSONDecoder().decode(T.self, from: data)
                             completion(.success(result))
                         } catch {
-                            completion(.failure(.badRequest))
+                            completion(.failure(.parsingError))
                         }
                     }
                 }
@@ -63,4 +63,6 @@ extension URLResponse {
         }
         return nil
     }
+    
+    
 }

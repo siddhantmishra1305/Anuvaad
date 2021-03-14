@@ -17,7 +17,7 @@ class LanguageViewController: UIViewController {
     var sender : String!
     weak var delegate : LanguageSelection?
     let translatedVM = TranslationViewModel()
-    var languages : [[String:Any]]?
+    var languages : Languages?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +68,9 @@ extension LanguageViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? LanguageCell
-        if let flag = cell?.flag.image, let code = languages?[indexPath.section]["name"] as? String{
+        if let flag = cell?.flag.image, let language = languages?[indexPath.section]{
             dismiss(animated: true, completion: nil)
-            delegate?.languageSelected(flag: flag, code: code, sender: sender)
+            delegate?.languageSelected(flag: flag, language:language,sender:sender)
         }
     }
     
@@ -86,7 +86,7 @@ extension LanguageViewController:UISearchBarDelegate{
         
         if searchText.count > 0 {
             languages = languages?.filter({
-                $0["name"] as! String == searchText
+                $0.name == searchText
             })
             languageListView.reloadData()
         }

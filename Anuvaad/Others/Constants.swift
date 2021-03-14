@@ -12,5 +12,5 @@ class Constants{
     static let textColor = UIColor(named: "TextColor")!
     static let backgroundColor = UIColor(named: "BackgroundColor")!
     static let unselectedTintColor = UIColor(named: "UnselectedTintColor")!
-    
+    static let placeholder = "Enter text here"
 }

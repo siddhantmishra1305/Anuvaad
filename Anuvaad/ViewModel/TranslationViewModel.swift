@@ -6,8 +6,46 @@
 //
 
 import Foundation
+import UIKit
+import Speech
 
 class TranslationViewModel{
+    
+    func outputViewSetup(outputView:InputView,translatedView:UIView,vc:HomeViewController){
+        outputView.isUserInteractionEnabled = false
+        outputView.leftButton.isHidden = true
+        translatedView.addSubview(outputView)
+        translatedView.roundCorners(10.0)
+        translatedView.addViewShadow(tag: 008)
+        
+        outputView.middleButton.addTarget(vc, action: #selector(vc.copyOutputToClipboard(_sender:)), for: .touchUpInside)
+        outputView.rightButton.addTarget(vc, action: #selector(vc.speakOuptut(_sender:)), for: .touchUpInside)
+    }
+    
+    func setTranslation(text:String,view:InputView?){
+        DispatchQueue.main.async {
+            view?.inputTextView.text = text
+        }
+    }
+    
+    func speech(text:String,code:String){
+        let synth = AVSpeechSynthesizer()
+        let myUtterance = AVSpeechUtterance(string: text)
+        myUtterance.voice = AVSpeechSynthesisVoice(language: code)
+        synth.speak(myUtterance)
+    }
+    
+    func inputViewSetup(ipView:InputView,inputTranslationView:UIView,vc:HomeViewController){
+        ipView.inputTextView.text = Constants.placeholder
+        inputTranslationView.addSubview(ipView)
+        ipView.inputTextView.delegate = vc
+        inputTranslationView.roundCorners(10.0)
+        inputTranslationView.addViewShadow(tag: 009)
+        
+        ipView.leftButton.addTarget(vc, action: #selector(vc.deleteText(_sender:)), for: .touchUpInside)
+        ipView.middleButton.addTarget(vc, action: #selector(vc.copyInputToClipboard(_sender:)), for: .touchUpInside)
+        ipView.rightButton.addTarget(vc, action: #selector(vc.speakInput(_sender:)), for: .touchUpInside)
+    }
     
     func getTranslation(text:String, sourceLanguageCode:String, destinationLanguageCode:String,handler:@escaping (String,NetworkError?)->Void){
         ServerManager.shared.request(router: ServerRequestRouter.getTranslation(text, sourceLanguageCode, destinationLanguageCode)) { (result:Result<TranslatedResponse,NetworkError>) in
@@ -24,19 +62,21 @@ class TranslationViewModel{
         }
     }
     
-    func getLanguages()->[[String:Any]]?{
+    func getFilterLanguage(name:String)->Language?{
+        return getLanguages()?.filter({$0.name == name}).first
+    }
+    
+    func getLanguages()->Languages?{
         if let path = Bundle.main.path(forResource: "Language", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [[String:AnyObject]] {
-                    return jsonResult
-                }
+                let jsonResult : Languages = try JSONDecoder().decode(Languages.self, from: data)
+                return jsonResult
             } catch {
                 print("Invalid JSON")
-                // handle error
             }
         }
         return nil
     }
+    
 }

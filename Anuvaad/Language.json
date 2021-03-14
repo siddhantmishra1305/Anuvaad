@@ -1,202 +1,164 @@
 [
-  {
-    "language": "af",
-    "name": "Afrikaans",
-    "country": "ZA"
-  },
-  {
-    "language": "sq",
-    "name": "Albanian",
-    "country": "AL"
-  },
-  {
-    "language": "am",
-    "name": "Amharic",
-    "country": "ET"
-  },
-  {
-    "language": "hy",
-    "name": "Armenian",
-    "country": "AM"
-  },
-  {
-    "language": "az",
-    "name": "Azerbaijani",
-    "country": "AZ"
-  },
-  {
-    "language": "eu",
-    "name": "Basque",
-    "country": "ES"
-  },
-  {
-    "language": "be",
-    "name": "Belarusian",
-    "country": "BY"
-  },
-  {
-    "language": "bn",
-    "name": "Bengali",
-    "country": "IN"
-  },
-  {
-    "language": "bs",
-    "name": "Bosnian",
-    "country": "BA"
-  },
-  {
-    "language": "bg",
-    "name": "Bulgarian",
-    "country": "BG"
-  },
-  {
-    "language": "ca",
-    "name": "Catalan",
-    "country": "ES"
-  },
-  {
-    "language": "ceb",
-    "name": "Cebuano",
-    "country": "PH"
-  },
-  {
-    "language": "ny",
-    "name": "Chichewa",
-    "country": "MW"
-  },
-  {
-    "language": "zh-CN",
-    "name": "Chinese (Simplified)",
-    "country": "CN"
-  },
-  {
-    "language": "zh-TW",
-    "name": "Chinese (Traditional)",
-    "country": "CN"
-  },
-  {
-    "language": "co",
-    "name": "Corsican",
-    "country": "FR"
-  },
-  {
-    "language": "hr",
-    "name": "Croatian",
-    "country": "HR"
-  },
-  {
-    "language": "cs",
-    "name": "Czech",
-    "country": "CZ"
-  },
-  {
-    "language": "da",
-    "name": "Danish",
-    "country": "DK"
-  },
-  {
-    "language": "nl",
-    "name": "Dutch",
-    "country": "NL"
-  },
-  {
-    "language": "en",
-    "name": "English",
-    "country": "GB"
-  },
-  {
-    "language": "et",
-    "name": "Estonian",
-    "country": "EE"
-  },
-  {
-    "language": "fi",
-    "name": "Finnish",
-    "country": "FI"
-  },
-  {
-    "language": "fr",
-    "name": "French",
-    "country": "FR"
-  },
-  {
-    "language": "fy",
-    "name": "Frisian",
-    "country": "NL"
-  },
-  {
-    "language": "gl",
-    "name": "Galician",
-    "country": "ES"
-  },
-  {
-    "language": "ka",
-    "name": "Georgian",
-    "country": "GE"
-  },
-  {
-    "language": "de",
-    "name": "German",
-    "country": "DE"
-  },
-  {
-    "language": "el",
-    "name": "Greek",
-    "country": "GR"
-  },
-  {
-    "language": "gu",
-    "name": "Gujarati",
-    "country": "IN"
-  },
-  {
-    "language": "hi",
-    "name": "Hindi",
-    "country": "IN"
-  },
-  {
-    "language": "hu",
-    "name": "Hungarian",
-    "country": "hu"
-  },
-  {
-    "language": "is",
-    "name": "Icelandic",
-    "country": "IS"
-  },
-  {
-    "language": "ig",
-    "name": "Igbo",
-    "country": "NG"
-  },
-  {
-    "language": "id",
-    "name": "Indonesian",
-    "country": "ID"
-  },
-  {
-    "language": "ga",
-    "name": "Irish",
-    "country": "IE"
-  },
-  {
-    "language": "it",
-    "name": "Italian",
-    "country": "IT"
-  },
-  {
-    "language": "ja",
-    "name": "Japanese",
-    "country": "JP"
-  },
-  {
-    "language": "kn",
-    "name": "Kannada",
-    "country": "IN"
-  },
-  {
-    "language": "vi",
-    "name": "Vietnamese",
-    "country": "VN"
-  }
-]
+      {
+        "language": "ar",
+        "name": "Arabic",
+        "code": "ar-SA",
+        "country": "AE"
+      },
+      {
+        "language": "cs",
+        "name": "Czech",
+        "code": "cs-CZ",
+        "country": "CZ"
+      },
+      {
+        "language": "da",
+        "name": "Danish",
+        "code": "da-DK",
+        "country": "DK"
+      },
+      {
+        "language": "nl",
+        "name": "Dutch",
+        "code": "nl-NL",
+        "country": "NL"
+      },
+      {
+        "language": "en",
+        "name": "English",
+        "code": "en-GB",
+        "country": "GB"
+      },
+      {
+        "language": "fi",
+        "name": "Finnish",
+        "code": "fi-FI",
+        "country": "FI"
+      },
+      {
+        "language": "fr",
+        "name": "French",
+        "code": "fr-FR",
+        "country": "FR"
+      },
+      {
+        "language": "de",
+        "name": "German",
+        "code": "de-DE",
+        "country": "DE"
+      },
+      {
+        "language": "el",
+        "name": "Greek",
+        "code": "el-GR",
+        "country": "GR"
+      },
+      {
+        "language": "iw",
+        "name": "Hebrew",
+        "code": "he-IL",
+        "country": "IL"
+      },
+      {
+        "language": "hi",
+        "name": "Hindi",
+        "code": "hi-IN",
+        "country": "IN"
+      },
+      {
+        "language": "hu",
+        "name": "Hungarian",
+        "code": "hu-HU",
+        "country": "HU"
+      },
+      {
+        "language": "id",
+        "name": "Indonesian",
+        "code": "id-ID",
+        "country": "ID"
+      },
+      {
+        "language": "it",
+        "name": "Italian",
+        "code": "it-IT",
+        "country": "IT"
+      },
+      {
+        "language": "ja",
+        "name": "Japanese",
+        "code": "ja-JP",
+        "country": "JP"
+      },
+      {
+        "language": "ko",
+        "name": "Korean",
+        "code": "ko-KR",
+        "country": "KR"
+      },
+      {
+        "language": "no",
+        "name": "Norwegian",
+        "code": "no-NO",
+        "country": "NO"
+      },
+      {
+        "language": "pl",
+        "name": "Polish",
+        "code": "pl-PL",
+        "country": "PL"
+      },
+      {
+        "language": "pt",
+        "name": "Portuguese",
+        "code": "pt-BR",
+        "country": "BR"
+      },
+      {
+        "language": "ro",
+        "name": "Romanian",
+        "code": "ro-RO",
+        "country": "RO"
+      },
+      {
+        "language": "ru",
+        "name": "Russian",
+        "code": "ru-RU",
+        "country": "RU"
+      },
+      {
+        "language": "sk",
+        "name": "Slovak",
+        "code": "sk-SK",
+        "country": "SK"
+      },
+      {
+        "language": "es",
+        "name": "Spanish",
+        "code": "es-ES",
+        "country": "ES"
+      },
+      {
+        "language": "sv",
+        "name": "Swedish",
+        "code": "sv-SE",
+        "country": "SE"
+      },
+      {
+        "language": "th",
+        "name": "Thai",
+        "code": "th-TH",
+        "country": "TH"
+      },
+      {
+        "language": "tr",
+        "name": "Turkish",
+        "code": "tr-TR",
+        "country": "TR"
+      },
+      {
+        "language": "zh",
+        "name": "Chinese (Simplified)",
+        "code": "zh-CN",
+        "country": "CN"
+      }
+    ]

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2087C5E25FE9FE200ED67FC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2087C5D25FE9FE200ED67FC /* Language.swift */; };
 		E24891B725FACC2200E1FB84 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24891B625FACC2200E1FB84 /* BottomBar.swift */; };
 		E24891BB25FACC3000E1FB84 /* BottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24891BA25FACC3000E1FB84 /* BottomBar.xib */; };
 		E24891BF25FACDF700E1FB84 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24891BE25FACDF700E1FB84 /* BaseViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2087C5D25FE9FE200ED67FC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E24891B625FACC2200E1FB84 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		E24891BA25FACC3000E1FB84 /* BottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBar.xib; sourceTree = "<group>"; };
 		E24891BE25FACDF700E1FB84 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2087C5C25FE9FD400ED67FC /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				E2087C5D25FE9FE200ED67FC /* Language.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		E24891B525FACC0600E1FB84 /* BottomBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 		E29B662625FAA30300D8EBD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2087C5C25FE9FD400ED67FC /* Language */,
 				E2811D2925FBA6F100891221 /* Translation */,
 				E2811D2325FB847F00891221 /* ServerRequestRouter.swift */,
 				E2811D2625FB849500891221 /* ServerManager.swift */,
@@ -286,6 +297,7 @@
 				E24891BF25FACDF700E1FB84 /* BaseViewController.swift in Sources */,
 				E2811D2D25FBA70E00891221 /* Translations.swift in Sources */,
 				E29B661125FA128800D8EBD4 /* HomeViewController.swift in Sources */,
+				E2087C5E25FE9FE200ED67FC /* Language.swift in Sources */,
 				E2811D3C25FBD74800891221 /* LanguageCell.swift in Sources */,
 				E24891C825FB473500E1FB84 /* UIView + Extension.swift in Sources */,
 				E2811D2E25FBA70E00891221 /* TranslatedResponse.swift in Sources */,

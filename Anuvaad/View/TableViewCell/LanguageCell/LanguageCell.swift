@@ -17,12 +17,12 @@ class LanguageCell: UITableViewCell {
     
     @IBOutlet weak var languageName: UILabel!
     
-    var cellData : [String:Any]?{
+    var cellData : Language!{
         didSet{
-            if let code = cellData?["country"]{
+            if let code = cellData.country{
                 let url = "https://www.countryflags.io/\(code)/flat/64.png"
                 flag.imageFromServerURL(url, placeHolder: nil)
-                languageName.text = cellData?["name"] as? String
+                languageName.text = cellData.name
                 self.roundCorners(10.0)
             }
         }

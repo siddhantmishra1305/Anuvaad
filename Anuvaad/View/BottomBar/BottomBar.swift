@@ -32,28 +32,28 @@ class BottomBar: UIView {
     }
     
     
-    func selectedButton(btn : UIButton){
-        switch btn {
-        case homeBtn:
+    func selectedButton(index : Int){
+        switch index {
+        case 0:
             
             setTintColor(color1: .white, color2: Constants.unselectedTintColor, color3: Constants.unselectedTintColor, color4: Constants.unselectedTintColor)
             homeBtn.backgroundColor = Constants.primaryColor
             
             break
             
-        case favBtn:
+        case 1:
             
             setTintColor(color1: Constants.unselectedTintColor, color2: .white, color3: Constants.unselectedTintColor, color4: Constants.unselectedTintColor)
             favBtn.backgroundColor = Constants.primaryColor
             break
             
-        case speechBtn:
+        case 2:
             
             setTintColor(color1: Constants.unselectedTintColor, color2: Constants.unselectedTintColor, color3: .white, color4: Constants.unselectedTintColor)
             speechBtn.backgroundColor = Constants.primaryColor
             break
             
-        case settingsBtn:
+        case 3:
             
             setTintColor(color1: Constants.unselectedTintColor, color2: Constants.unselectedTintColor, color3: Constants.unselectedTintColor, color4: .white)
             settingsBtn.backgroundColor = Constants.primaryColor

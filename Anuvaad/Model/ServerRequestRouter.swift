@@ -59,17 +59,21 @@ enum ServerRequestRouter{
         
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 10)
         request.httpMethod = method.value
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.allHTTPHeaderFields = headers
         
         
         switch self {
         case .getTranslation(let text, let source, let target):
-            var param = [String:Any]()
-            param["q"] = text
-            param["source"] = source
-            param["target"] = target
-            request.httpBody = try JSONSerialization.data(withJSONObject: param, options: .prettyPrinted)
+//            var param = [String:Any]()
+//            param["q"] = text
+//            param["source"] = source
+//            param["target"] = target
+            
+            let postData = NSMutableData(data: "q=\(text)".data(using: String.Encoding.utf8)!)
+            postData.append("&source=\(source)".data(using: String.Encoding.utf8)!)
+            postData.append("&target=\(target)".data(using: String.Encoding.utf8)!)
+            
+            request.httpBody = postData as Data
             return request
             
         }
