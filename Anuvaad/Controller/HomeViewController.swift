@@ -47,6 +47,11 @@ class HomeViewController: BaseViewController {
         
         translationVM.outputViewSetup(outputView: outputView, translatedView: translatedView,vc:self)
         translationVM.inputViewSetup(ipView: ipView, inputTranslationView: inputTranslationView, vc: self)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        bottomTabBar.selectedButton(index: 0)
     }
     
     @IBAction func sourceLanguage(_ sender: Any) {
@@ -54,6 +59,7 @@ class HomeViewController: BaseViewController {
         let languageVC = storyBoard.instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
         languageVC.delegate = self
         languageVC.sender = "Source"
+        languageVC.currentLanguage = targetLanguage
         self.navigationController?.present(languageVC, animated: true, completion: nil)
     }
     
@@ -66,6 +72,7 @@ class HomeViewController: BaseViewController {
         let languageVC = storyBoard.instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
         languageVC.sender = "Target"
         languageVC.delegate = self
+        languageVC.currentLanguage = sourceLanguage
         self.navigationController?.present(languageVC, animated: true, completion: nil)
     }
     
@@ -164,3 +171,4 @@ extension HomeViewController {
         outputView.inputTextView.text = nil
     }
 }
+

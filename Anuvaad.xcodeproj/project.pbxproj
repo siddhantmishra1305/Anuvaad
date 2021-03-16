@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,9 +32,20 @@
 		E29B662325FA9CF100D8EBD4 /* Language.json in Resources */ = {isa = PBXBuildFile; fileRef = E29B662225FA9CF100D8EBD4 /* Language.json */; };
 		E29B663225FAA5DC00D8EBD4 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B663125FAA5DC00D8EBD4 /* InputView.swift */; };
 		E29B663525FAA5F100D8EBD4 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29B663425FAA5F100D8EBD4 /* InputView.xib */; };
+		E2E5E05225FFD58B0011EB3D /* InputSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */; };
+		E2E5E05525FFD5A10011EB3D /* InputSpeechView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */; };
+		E2E5E05825FFD8F30011EB3D /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */; };
+		E2E5E05B25FFDC360011EB3D /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */; };
+		E2E5E06125FFF6900011EB3D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */; };
+		E2E5E099260110070011EB3D /* loading1.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E098260110070011EB3D /* loading1.json */; };
+		E2E5E0A2260131E00011EB3D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E0A1260131E00011EB3D /* loading.json */; };
+		EA8AEEB583C963795CA05136 /* Pods_Anuvaad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2B0D16D743E04E2ADD366 /* Pods_Anuvaad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42B2B0D16D743E04E2ADD366 /* Pods_Anuvaad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anuvaad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1265F8746C9A876C45DD625 /* Pods-Anuvaad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anuvaad.release.xcconfig"; path = "Target Support Files/Pods-Anuvaad/Pods-Anuvaad.release.xcconfig"; sourceTree = "<group>"; };
+		DF4117B0089E0BA4F665AFEE /* Pods-Anuvaad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anuvaad.debug.xcconfig"; path = "Target Support Files/Pods-Anuvaad/Pods-Anuvaad.debug.xcconfig"; sourceTree = "<group>"; };
 		E2087C5D25FE9FE200ED67FC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E24891B625FACC2200E1FB84 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		E24891BA25FACC3000E1FB84 /* BottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBar.xib; sourceTree = "<group>"; };
@@ -62,6 +73,13 @@
 		E29B662225FA9CF100D8EBD4 /* Language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Language.json; sourceTree = "<group>"; };
 		E29B663125FAA5DC00D8EBD4 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		E29B663425FAA5F100D8EBD4 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechView.swift; sourceTree = "<group>"; };
+		E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSpeechView.xib; sourceTree = "<group>"; };
+		E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		E2E5E098260110070011EB3D /* loading1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading1.json; sourceTree = "<group>"; };
+		E2E5E0A1260131E00011EB3D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +87,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8AEEB583C963795CA05136 /* Pods_Anuvaad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F4F5C12A7E4D76EB7EC3DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42B2B0D16D743E04E2ADD366 /* Pods_Anuvaad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2087C5C25FE9FD400ED67FC /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +125,7 @@
 				E24891C725FB473500E1FB84 /* UIView + Extension.swift */,
 				E2811D4125FBF1B700891221 /* UIImageView + Extension.swift */,
 				E2811D4425FBFA4E00891221 /* UIViewController + Extension.swift */,
+				E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -134,6 +162,8 @@
 			children = (
 				E29B660B25FA128800D8EBD4 /* Anuvaad */,
 				E29B660A25FA128800D8EBD4 /* Products */,
+				FA1FD51B5780C75B4BF46090 /* Pods */,
+				4F4F5C12A7E4D76EB7EC3DDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,8 +178,11 @@
 		E29B660B25FA128800D8EBD4 /* Anuvaad */ = {
 			isa = PBXGroup;
 			children = (
+				E2E5E0A1260131E00011EB3D /* loading.json */,
+				E2E5E098260110070011EB3D /* loading1.json */,
 				E29B660C25FA128800D8EBD4 /* AppDelegate.swift */,
 				E29B661225FA128800D8EBD4 /* Main.storyboard */,
+				E2E5E09C260125A30011EB3D /* Animations */,
 				E24891C625FB471700E1FB84 /* Extensions */,
 				E29B662A25FAA32700D8EBD4 /* Others */,
 				E29B662925FAA31800D8EBD4 /* Controller */,
@@ -175,6 +208,7 @@
 		E29B662725FAA30900D8EBD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2E5E05025FFD5510011EB3D /* InputSpeechView */,
 				E24891B525FACC0600E1FB84 /* BottomBar */,
 				E29B663025FAA5C200D8EBD4 /* InputView */,
 				E2811D3825FBD71F00891221 /* TableViewCell */,
@@ -186,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E2811D3125FBA75800891221 /* TranslationViewModel.swift */,
+				E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +231,7 @@
 				E29B661025FA128800D8EBD4 /* HomeViewController.swift */,
 				E24891BE25FACDF700E1FB84 /* BaseViewController.swift */,
 				E2811D3525FBAAD900891221 /* LanguageViewController.swift */,
+				E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +256,31 @@
 			path = InputView;
 			sourceTree = "<group>";
 		};
+		E2E5E05025FFD5510011EB3D /* InputSpeechView */ = {
+			isa = PBXGroup;
+			children = (
+				E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */,
+				E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */,
+			);
+			path = InputSpeechView;
+			sourceTree = "<group>";
+		};
+		E2E5E09C260125A30011EB3D /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		FA1FD51B5780C75B4BF46090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF4117B0089E0BA4F665AFEE /* Pods-Anuvaad.debug.xcconfig */,
+				C1265F8746C9A876C45DD625 /* Pods-Anuvaad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E29B661D25FA128900D8EBD4 /* Build configuration list for PBXNativeTarget "Anuvaad" */;
 			buildPhases = (
+				A5CECB026F95ACB9D155FE94 /* [CP] Check Pods Manifest.lock */,
 				E29B660525FA128800D8EBD4 /* Sources */,
 				E29B660625FA128800D8EBD4 /* Frameworks */,
 				E29B660725FA128800D8EBD4 /* Resources */,
+				7424EEF828B16FBE7A9ADA12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,14 +343,59 @@
 				E29B661925FA128900D8EBD4 /* LaunchScreen.storyboard in Resources */,
 				E29B662325FA9CF100D8EBD4 /* Language.json in Resources */,
 				E24891BB25FACC3000E1FB84 /* BottomBar.xib in Resources */,
+				E2E5E099260110070011EB3D /* loading1.json in Resources */,
 				E2811D3D25FBD74800891221 /* LanguageCell.xib in Resources */,
 				E29B661625FA128900D8EBD4 /* Assets.xcassets in Resources */,
 				E29B661425FA128800D8EBD4 /* Main.storyboard in Resources */,
+				E2E5E0A2260131E00011EB3D /* loading.json in Resources */,
 				E29B663525FAA5F100D8EBD4 /* InputView.xib in Resources */,
+				E2E5E05525FFD5A10011EB3D /* InputSpeechView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7424EEF828B16FBE7A9ADA12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anuvaad/Pods-Anuvaad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Anuvaad/Pods-Anuvaad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Anuvaad/Pods-Anuvaad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CECB026F95ACB9D155FE94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anuvaad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E29B660525FA128800D8EBD4 /* Sources */ = {
@@ -303,12 +411,16 @@
 				E2811D2E25FBA70E00891221 /* TranslatedResponse.swift in Sources */,
 				E24891B725FACC2200E1FB84 /* BottomBar.swift in Sources */,
 				E2811D2125FB6EFA00891221 /* Constants.swift in Sources */,
+				E2E5E06125FFF6900011EB3D /* UIImage+Extension.swift in Sources */,
 				E2811D2F25FBA70E00891221 /* Data.swift in Sources */,
 				E2811D2425FB847F00891221 /* ServerRequestRouter.swift in Sources */,
 				E29B663225FAA5DC00D8EBD4 /* InputView.swift in Sources */,
 				E2811D2725FB849500891221 /* ServerManager.swift in Sources */,
+				E2E5E05225FFD58B0011EB3D /* InputSpeechView.swift in Sources */,
 				E2811D4225FBF1B700891221 /* UIImageView + Extension.swift in Sources */,
 				E29B660D25FA128800D8EBD4 /* AppDelegate.swift in Sources */,
+				E2E5E05B25FFDC360011EB3D /* SpeechViewModel.swift in Sources */,
+				E2E5E05825FFD8F30011EB3D /* SpeechViewController.swift in Sources */,
 				E2811D4525FBFA4E00891221 /* UIViewController + Extension.swift in Sources */,
 				E2811D3625FBAAD900891221 /* LanguageViewController.swift in Sources */,
 				E2811D3225FBA75800891221 /* TranslationViewModel.swift in Sources */,
@@ -455,6 +567,7 @@
 		};
 		E29B661E25FA128900D8EBD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4117B0089E0BA4F665AFEE /* Pods-Anuvaad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +588,7 @@
 		};
 		E29B661F25FA128900D8EBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1265F8746C9A876C45DD625 /* Pods-Anuvaad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

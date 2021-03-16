@@ -1,0 +1,6 @@
+framework module Pods_Anuvaad {
+  umbrella header "Pods-Anuvaad-umbrella.h"
+
+  export *
+  module * { export * }
+}

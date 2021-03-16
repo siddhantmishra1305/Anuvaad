@@ -30,3 +30,9 @@ extension UIViewController {
     }
 }
 
+extension UINavigationController {
+    public func hasViewController(ofKind kind: AnyClass) -> UIViewController? {
+        return self.viewControllers.first(where: {$0.isKind(of: kind)})
+    }
+}
+

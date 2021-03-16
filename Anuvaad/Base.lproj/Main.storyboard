@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Kw-6v-1ZU">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -70,7 +70,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </stackView>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Lod-UA-1fC" customClass="InputView" customModule="Anuvaad" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="75" width="374" height="290.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="75" width="374" height="290.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -79,7 +79,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XDR-RI-JjE" customClass="InputView" customModule="Anuvaad" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="385.66666666666674" width="374" height="290.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="385.5" width="374" height="290.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -208,6 +208,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZiC-UN-xCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4360.8695652173919" y="111.83035714285714"/>
+        </scene>
+        <!--Speech View Controller-->
+        <scene sceneID="LTN-ic-mR3">
+            <objects>
+                <viewController storyboardIdentifier="SpeechViewController" id="xSj-Lq-HEh" customClass="SpeechViewController" customModule="Anuvaad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gc-8z-kbp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xf-z0-mhs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-UV-L8K">
+                                        <rect key="frame" x="20" y="90" width="374" height="761"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-og-H4u">
+                                                <rect key="frame" x="149.5" y="0.0" width="75" height="32"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="kyY-ev-gO9"/>
+                                                    <constraint firstAttribute="height" constant="32" id="rc1-wE-E5E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                <state key="normal" title="Hindi">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="targetLanguageAction:" destination="xSj-Lq-HEh" eventType="touchUpInside" id="7OB-NV-4r6"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STg-VN-qMX">
+                                                <rect key="frame" x="0.0" y="52" width="374" height="281"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-nc-a54">
+                                                <rect key="frame" x="149.5" y="353" width="75" height="32"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="rr3-Za-LEa"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="y2Y-DI-6UC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="English">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sourceLanguageAction:" destination="xSj-Lq-HEh" eventType="touchUpInside" id="0qr-bV-veU"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaN-O4-LQc">
+                                                <rect key="frame" x="0.0" y="405" width="374" height="281"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2do-x7-KW1">
+                                                <rect key="frame" x="0.0" y="706" width="374" height="55"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="Jcv-9e-vAO"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="STg-VN-qMX" firstAttribute="leading" secondItem="mhc-UV-L8K" secondAttribute="leading" id="0G8-dJ-AMy"/>
+                                            <constraint firstItem="STg-VN-qMX" firstAttribute="leading" secondItem="JaN-O4-LQc" secondAttribute="leading" id="TTO-tf-D07"/>
+                                            <constraint firstItem="JaN-O4-LQc" firstAttribute="leading" secondItem="2do-x7-KW1" secondAttribute="leading" id="m4y-dr-v85"/>
+                                            <constraint firstItem="JaN-O4-LQc" firstAttribute="height" secondItem="STg-VN-qMX" secondAttribute="height" id="yYR-cR-2ne"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mhc-UV-L8K" firstAttribute="leading" secondItem="5xf-z0-mhs" secondAttribute="leading" constant="20" id="aTE-m5-q2y"/>
+                                    <constraint firstItem="mhc-UV-L8K" firstAttribute="top" secondItem="5xf-z0-mhs" secondAttribute="top" constant="90" id="cAe-oj-BTR"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhc-UV-L8K" secondAttribute="trailing" constant="20" id="cjz-Kl-2uu"/>
+                                    <constraint firstAttribute="bottom" secondItem="mhc-UV-L8K" secondAttribute="bottom" constant="45" id="fjI-8T-GRm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DH9-BD-t7K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DH9-BD-t7K" firstAttribute="trailing" secondItem="5xf-z0-mhs" secondAttribute="trailing" id="35q-f4-Cbm"/>
+                            <constraint firstItem="5xf-z0-mhs" firstAttribute="leading" secondItem="DH9-BD-t7K" secondAttribute="leading" id="Tfj-A8-dXF"/>
+                            <constraint firstItem="5xf-z0-mhs" firstAttribute="top" secondItem="7gc-8z-kbp" secondAttribute="top" id="k9s-Me-z1b"/>
+                            <constraint firstAttribute="bottom" secondItem="5xf-z0-mhs" secondAttribute="bottom" id="kBg-Kb-yiQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBar" destination="2do-x7-KW1" id="koY-c4-HSL"/>
+                        <outlet property="sourceLanguageBtn" destination="c7u-nc-a54" id="DjZ-np-cpr"/>
+                        <outlet property="speechView" destination="JaN-O4-LQc" id="HT7-jK-Zxn"/>
+                        <outlet property="targetLanguageBtn" destination="OXw-og-H4u" id="rVI-55-xYO"/>
+                        <outlet property="translatedOutputView" destination="STg-VN-qMX" id="OGr-dT-q1E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KV1-8b-7XE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5404.347826086957" y="112.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VHj-XR-fg6">

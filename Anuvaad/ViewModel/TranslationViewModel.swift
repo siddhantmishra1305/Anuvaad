@@ -10,6 +10,7 @@ import UIKit
 import Speech
 
 class TranslationViewModel{
+    let synth = AVSpeechSynthesizer()
     
     func outputViewSetup(outputView:InputView,translatedView:UIView,vc:HomeViewController){
         outputView.isUserInteractionEnabled = false
@@ -29,10 +30,11 @@ class TranslationViewModel{
     }
     
     func speech(text:String,code:String){
-        let synth = AVSpeechSynthesizer()
-        let myUtterance = AVSpeechUtterance(string: text)
-        myUtterance.voice = AVSpeechSynthesisVoice(language: code)
-        synth.speak(myUtterance)
+        if !synth.isSpeaking{
+            let myUtterance = AVSpeechUtterance(string: text)
+            myUtterance.voice = AVSpeechSynthesisVoice(language: code)
+            synth.speak(myUtterance)
+        }
     }
     
     func inputViewSetup(ipView:InputView,inputTranslationView:UIView,vc:HomeViewController){

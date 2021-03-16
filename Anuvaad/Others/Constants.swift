@@ -13,4 +13,6 @@ class Constants{
     static let backgroundColor = UIColor(named: "BackgroundColor")!
     static let unselectedTintColor = UIColor(named: "UnselectedTintColor")!
     static let placeholder = "Enter text here"
+    static let speechPlaceolder = "Press record to start"
+    static var selectedTab = 0
 }

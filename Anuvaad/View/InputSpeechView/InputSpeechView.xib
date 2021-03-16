@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputSpeechView" customModule="Anuvaad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rT5-iv-APM">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-2N-NF8">
+                            <rect key="frame" x="5" y="5" width="364" height="280"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press record to start" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acq-m9-Abe">
+                                    <rect key="frame" x="5" y="0.0" width="354" height="60"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="R9d-oO-rxJ">
+                                    <rect key="frame" x="132" y="100" width="100" height="100"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="Ssy-Iq-AGs"/>
+                                        <constraint firstAttribute="height" constant="100" id="WGo-Zx-AzV"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dX-kf-oTG">
+                                    <rect key="frame" x="162" y="240" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="dLb-PC-6Jr"/>
+                                        <constraint firstAttribute="height" constant="40" id="p64-mb-qdg"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.79607843137254897" green="0.21176470588235294" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal">
+                                        <color key="titleColor" name="AccentColor"/>
+                                        <imageReference key="image" image="record.circle" catalog="system" symbolScale="large" renderingMode="template"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="medium"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="acq-m9-Abe" firstAttribute="leading" secondItem="Oh3-2N-NF8" secondAttribute="leading" constant="5" id="6xb-3x-ggW"/>
+                                <constraint firstAttribute="trailing" secondItem="acq-m9-Abe" secondAttribute="trailing" constant="5" id="ZUn-JZ-gp3"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oh3-2N-NF8" firstAttribute="top" secondItem="rT5-iv-APM" secondAttribute="top" constant="5" id="5sb-qE-dLS"/>
+                        <constraint firstAttribute="bottom" secondItem="Oh3-2N-NF8" secondAttribute="bottom" constant="5" id="P38-Kz-fWT"/>
+                        <constraint firstItem="Oh3-2N-NF8" firstAttribute="leading" secondItem="rT5-iv-APM" secondAttribute="leading" constant="5" id="RoS-TR-pAj"/>
+                        <constraint firstAttribute="trailing" secondItem="Oh3-2N-NF8" secondAttribute="trailing" constant="5" id="c6r-QB-hXi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rT5-iv-APM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nro-Sn-AK7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rT5-iv-APM" secondAttribute="bottom" id="OZV-zY-sII"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rT5-iv-APM" secondAttribute="trailing" id="PPo-n7-vs7"/>
+                <constraint firstItem="rT5-iv-APM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fcm-Bp-cv5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="recordBtn" destination="3dX-kf-oTG" id="glk-Wo-ws4"/>
+                <outlet property="recordingAnimationView" destination="R9d-oO-rxJ" id="yKg-1O-ZWn"/>
+                <outlet property="speechText" destination="acq-m9-Abe" id="Mde-QE-vdD"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="record.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.2196078431372549" green="0.24313725490196078" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

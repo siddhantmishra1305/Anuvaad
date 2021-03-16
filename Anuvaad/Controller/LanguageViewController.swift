@@ -18,12 +18,13 @@ class LanguageViewController: UIViewController {
     weak var delegate : LanguageSelection?
     let translatedVM = TranslationViewModel()
     var languages : Languages?
+    var currentLanguage : Language!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         languageListView.register(UINib(nibName: "LanguageCell", bundle: nil), forCellReuseIdentifier: "LanguageCell")
-        languages = translatedVM.getLanguages()
+        languages = translatedVM.getLanguages()?.filter({$0.language != currentLanguage.language})
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -80,13 +81,13 @@ extension LanguageViewController:UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         if searchText.count == 0{
-            languages = translatedVM.getLanguages()
+            languages = translatedVM.getLanguages()?.filter({$0.language != currentLanguage.language})
             languageListView.reloadData()
         }
         
         if searchText.count > 0 {
             languages = languages?.filter({
-                $0.name == searchText
+                ($0.name?.contains(searchText) ?? false)
             })
             languageListView.reloadData()
         }
