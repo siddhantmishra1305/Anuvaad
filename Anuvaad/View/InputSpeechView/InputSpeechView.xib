@@ -34,9 +34,6 @@
                                         <constraint firstAttribute="width" constant="100" id="Ssy-Iq-AGs"/>
                                         <constraint firstAttribute="height" constant="100" id="WGo-Zx-AzV"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
-                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dX-kf-oTG">
                                     <rect key="frame" x="162" y="240" width="40" height="40"/>
