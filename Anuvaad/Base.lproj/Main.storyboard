@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mxo-UI-IOr">
-                                        <rect key="frame" x="20" y="100" width="374" height="751"/>
+                                        <rect key="frame" x="20" y="75" width="374" height="776"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OlF-Ep-7Yx">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
@@ -69,8 +69,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </stackView>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Lod-UA-1fC" customClass="InputView" customModule="Anuvaad" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="75" width="374" height="290.5"/>
+                                            <view contentMode="scaleAspectFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="Lod-UA-1fC" customClass="InputView" customModule="Anuvaad" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="75" width="374" height="303"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -79,7 +79,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XDR-RI-JjE" customClass="InputView" customModule="Anuvaad" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="385.5" width="374" height="290.5"/>
+                                                <rect key="frame" x="0.0" y="398" width="374" height="303"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -88,7 +88,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MA-pm-rUS">
-                                                <rect key="frame" x="0.0" y="696" width="374" height="55"/>
+                                                <rect key="frame" x="0.0" y="721" width="374" height="55"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="y6R-if-bD7"/>
@@ -103,7 +103,7 @@
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Mxo-UI-IOr" firstAttribute="leading" secondItem="dYl-eF-gKd" secondAttribute="leading" constant="20" id="7zB-Tc-NYj"/>
-                                    <constraint firstItem="Mxo-UI-IOr" firstAttribute="top" secondItem="dYl-eF-gKd" secondAttribute="top" constant="100" id="G8c-ia-CUP"/>
+                                    <constraint firstItem="Mxo-UI-IOr" firstAttribute="top" secondItem="dYl-eF-gKd" secondAttribute="top" constant="75" id="G8c-ia-CUP"/>
                                     <constraint firstAttribute="bottom" secondItem="Mxo-UI-IOr" secondAttribute="bottom" constant="45" id="Lwv-LZ-bTQ"/>
                                     <constraint firstAttribute="trailing" secondItem="Mxo-UI-IOr" secondAttribute="trailing" constant="20" id="ozh-we-aDm"/>
                                 </constraints>
@@ -221,7 +221,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-UV-L8K">
-                                        <rect key="frame" x="20" y="90" width="374" height="761"/>
+                                        <rect key="frame" x="20" y="75" width="374" height="776"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-og-H4u">
                                                 <rect key="frame" x="149.5" y="0.0" width="75" height="32"/>
@@ -244,11 +244,11 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STg-VN-qMX">
-                                                <rect key="frame" x="0.0" y="52" width="374" height="281"/>
+                                                <rect key="frame" x="0.0" y="52" width="374" height="288.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-nc-a54">
-                                                <rect key="frame" x="149.5" y="353" width="75" height="32"/>
+                                                <rect key="frame" x="149.5" y="360.5" width="75" height="32"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="rr3-Za-LEa"/>
@@ -268,11 +268,11 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaN-O4-LQc">
-                                                <rect key="frame" x="0.0" y="405" width="374" height="281"/>
+                                                <rect key="frame" x="0.0" y="412.5" width="374" height="288.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2do-x7-KW1">
-                                                <rect key="frame" x="0.0" y="706" width="374" height="55"/>
+                                                <rect key="frame" x="0.0" y="721" width="374" height="55"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="Jcv-9e-vAO"/>
@@ -291,7 +291,7 @@
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="mhc-UV-L8K" firstAttribute="leading" secondItem="5xf-z0-mhs" secondAttribute="leading" constant="20" id="aTE-m5-q2y"/>
-                                    <constraint firstItem="mhc-UV-L8K" firstAttribute="top" secondItem="5xf-z0-mhs" secondAttribute="top" constant="90" id="cAe-oj-BTR"/>
+                                    <constraint firstItem="mhc-UV-L8K" firstAttribute="top" secondItem="5xf-z0-mhs" secondAttribute="top" constant="75" id="cAe-oj-BTR"/>
                                     <constraint firstAttribute="trailing" secondItem="mhc-UV-L8K" secondAttribute="trailing" constant="20" id="cjz-Kl-2uu"/>
                                     <constraint firstAttribute="bottom" secondItem="mhc-UV-L8K" secondAttribute="bottom" constant="45" id="fjI-8T-GRm"/>
                                 </constraints>
@@ -341,7 +341,7 @@
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="repeat" catalog="system" width="128" height="99"/>
         <namedColor name="BackgroundColor">
-            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PrimaryColor">
             <color red="0.30588235294117649" green="0.32156862745098042" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

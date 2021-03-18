@@ -26,7 +26,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-EL-Owq">
                             <rect key="frame" x="106" y="0.0" width="46" height="45"/>
                             <color key="tintColor" name="UnselectedTintColor"/>
-                            <state key="normal" image="heart" catalog="system"/>
+                            <state key="normal" image="doc.plaintext" catalog="system"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYc-MY-5dB">
                             <rect key="frame" x="212" y="0.0" width="46" height="45"/>
@@ -60,8 +60,8 @@
         </view>
     </objects>
     <resources>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="mic" catalog="system" width="108" height="128"/>
         <namedColor name="UnselectedTintColor">

@@ -15,6 +15,7 @@ class TranslationViewModel{
     func outputViewSetup(outputView:InputView,translatedView:UIView,vc:HomeViewController){
         outputView.isUserInteractionEnabled = false
         outputView.leftButton.isHidden = true
+        outputView.frame.size = translatedView.frame.size
         translatedView.addSubview(outputView)
         translatedView.roundCorners(10.0)
         translatedView.addViewShadow(tag: 008)
@@ -40,10 +41,11 @@ class TranslationViewModel{
     func inputViewSetup(ipView:InputView,inputTranslationView:UIView,vc:HomeViewController){
         ipView.inputTextView.text = Constants.placeholder
         inputTranslationView.addSubview(ipView)
+        ipView.frame.size = inputTranslationView.frame.size
         ipView.inputTextView.delegate = vc
         inputTranslationView.roundCorners(10.0)
         inputTranslationView.addViewShadow(tag: 009)
-        
+    
         ipView.leftButton.addTarget(vc, action: #selector(vc.deleteText(_sender:)), for: .touchUpInside)
         ipView.middleButton.addTarget(vc, action: #selector(vc.copyInputToClipboard(_sender:)), for: .touchUpInside)
         ipView.rightButton.addTarget(vc, action: #selector(vc.speakInput(_sender:)), for: .touchUpInside)

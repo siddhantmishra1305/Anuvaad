@@ -41,7 +41,7 @@ struct ServerManager {
                         }
                         
                         do {
-                            print(String(data: data, encoding: .utf8))
+//                            print(String(data: data, encoding: .utf8))
                             let result = try JSONDecoder().decode(T.self, from: data)
                             completion(.success(result))
                         } catch {

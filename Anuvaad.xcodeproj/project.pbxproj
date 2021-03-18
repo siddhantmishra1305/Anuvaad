@@ -32,12 +32,12 @@
 		E29B662325FA9CF100D8EBD4 /* Language.json in Resources */ = {isa = PBXBuildFile; fileRef = E29B662225FA9CF100D8EBD4 /* Language.json */; };
 		E29B663225FAA5DC00D8EBD4 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B663125FAA5DC00D8EBD4 /* InputView.swift */; };
 		E29B663525FAA5F100D8EBD4 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29B663425FAA5F100D8EBD4 /* InputView.xib */; };
+		E2CC23752603367E00B27CBE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CC23742603367E00B27CBE /* launch.png */; };
 		E2E5E05225FFD58B0011EB3D /* InputSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */; };
 		E2E5E05525FFD5A10011EB3D /* InputSpeechView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */; };
 		E2E5E05825FFD8F30011EB3D /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */; };
 		E2E5E05B25FFDC360011EB3D /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */; };
 		E2E5E06125FFF6900011EB3D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */; };
-		E2E5E099260110070011EB3D /* loading1.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E098260110070011EB3D /* loading1.json */; };
 		E2E5E0A2260131E00011EB3D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E0A1260131E00011EB3D /* loading.json */; };
 		EA8AEEB583C963795CA05136 /* Pods_Anuvaad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2B0D16D743E04E2ADD366 /* Pods_Anuvaad.framework */; };
 /* End PBXBuildFile section */
@@ -73,12 +73,12 @@
 		E29B662225FA9CF100D8EBD4 /* Language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Language.json; sourceTree = "<group>"; };
 		E29B663125FAA5DC00D8EBD4 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		E29B663425FAA5F100D8EBD4 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		E2CC23742603367E00B27CBE /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechView.swift; sourceTree = "<group>"; };
 		E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSpeechView.xib; sourceTree = "<group>"; };
 		E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
 		E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		E2E5E098260110070011EB3D /* loading1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading1.json; sourceTree = "<group>"; };
 		E2E5E0A1260131E00011EB3D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,8 +178,8 @@
 		E29B660B25FA128800D8EBD4 /* Anuvaad */ = {
 			isa = PBXGroup;
 			children = (
+				E2CC23742603367E00B27CBE /* launch.png */,
 				E2E5E0A1260131E00011EB3D /* loading.json */,
-				E2E5E098260110070011EB3D /* loading1.json */,
 				E29B660C25FA128800D8EBD4 /* AppDelegate.swift */,
 				E29B661225FA128800D8EBD4 /* Main.storyboard */,
 				E2E5E09C260125A30011EB3D /* Animations */,
@@ -343,7 +343,7 @@
 				E29B661925FA128900D8EBD4 /* LaunchScreen.storyboard in Resources */,
 				E29B662325FA9CF100D8EBD4 /* Language.json in Resources */,
 				E24891BB25FACC3000E1FB84 /* BottomBar.xib in Resources */,
-				E2E5E099260110070011EB3D /* loading1.json in Resources */,
+				E2CC23752603367E00B27CBE /* launch.png in Resources */,
 				E2811D3D25FBD74800891221 /* LanguageCell.xib in Resources */,
 				E29B661625FA128900D8EBD4 /* Assets.xcassets in Resources */,
 				E29B661425FA128800D8EBD4 /* Main.storyboard in Resources */,

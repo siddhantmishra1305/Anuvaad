@@ -27,7 +27,7 @@ class SpeechViewController: BaseViewController {
     
     var sourceLanguage : Language?{
         didSet{
-            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: targetLanguage?.code ?? "en-US"))
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: sourceLanguage?.code ?? "en-US"))
         }
     }
     
