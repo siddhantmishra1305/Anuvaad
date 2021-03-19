@@ -26,7 +26,7 @@ class NotesViewController: BaseViewController {
     
     @IBAction func addNewNoteAction(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let homeVC = storyBoard.instantiateViewController(withIdentifier: "NotesViewController") as! NotesViewController
+        let homeVC = storyBoard.instantiateViewController(withIdentifier: "AddNoteViewController") as! AddNoteViewController
         self.navigationController?.pushViewController(homeVC, animated: false)
     }
     
@@ -48,7 +48,16 @@ extension NotesViewController:UICollectionViewDelegate,UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NotesCell", for: indexPath) as! NotesCell
+        cell.cellData = notes?[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let homeVC = storyBoard.instantiateViewController(withIdentifier: "AddNoteViewController") as! AddNoteViewController
+        homeVC.note = notes?[indexPath.row]
+        self.navigationController?.pushViewController(homeVC, animated: false)
     }
     
     

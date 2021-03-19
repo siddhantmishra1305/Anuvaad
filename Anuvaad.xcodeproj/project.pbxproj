@@ -12,6 +12,7 @@
 		E24891BB25FACC3000E1FB84 /* BottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24891BA25FACC3000E1FB84 /* BottomBar.xib */; };
 		E24891BF25FACDF700E1FB84 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24891BE25FACDF700E1FB84 /* BaseViewController.swift */; };
 		E24891C825FB473500E1FB84 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24891C725FB473500E1FB84 /* UIView + Extension.swift */; };
+		E2534068260480CD0070CD06 /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2534067260480CD0070CD06 /* Date + Extension.swift */; };
 		E2811D2125FB6EFA00891221 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2811D2025FB6EFA00891221 /* Constants.swift */; };
 		E2811D2425FB847F00891221 /* ServerRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2811D2325FB847F00891221 /* ServerRequestRouter.swift */; };
 		E2811D2725FB849500891221 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2811D2625FB849500891221 /* ServerManager.swift */; };
@@ -57,6 +58,7 @@
 		E24891BA25FACC3000E1FB84 /* BottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBar.xib; sourceTree = "<group>"; };
 		E24891BE25FACDF700E1FB84 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E24891C725FB473500E1FB84 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		E2534067260480CD0070CD06 /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
 		E2811D2025FB6EFA00891221 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E2811D2325FB847F00891221 /* ServerRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequestRouter.swift; sourceTree = "<group>"; };
 		E2811D2625FB849500891221 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E2811D4425FBFA4E00891221 /* UIViewController + Extension.swift */,
 				E2E5E06025FFF6900011EB3D /* UIImage+Extension.swift */,
 				E2CC238B26038A0600B27CBE /* UserDefaults + Extension.swift */,
+				E2534067260480CD0070CD06 /* Date + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				E2811D3625FBAAD900891221 /* LanguageViewController.swift in Sources */,
 				E2811D3225FBA75800891221 /* TranslationViewModel.swift in Sources */,
 				E2CC2380260371E600B27CBE /* Note.swift in Sources */,
+				E2534068260480CD0070CD06 /* Date + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

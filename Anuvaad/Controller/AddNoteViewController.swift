@@ -15,15 +15,27 @@ class AddNoteViewController: UIViewController {
     @IBOutlet weak var micAnimationView: UIView!
     @IBOutlet weak var recordAudioBtn: UIButton!
 
+    var note : Note?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        navigationController?.navigationItem.rightBarButtonItem = 
     }
+    
+    override func viewWillLayoutSubviews() {
+        if let notesData = note{
+            titleTextFiel.text = notesData.title
+            bodyTextView.text = notesData.text
+            
+        }
+    }
+    
     
     @IBAction func recordBtnAction(_ sender: Any) {
         
         
     }
+    
     
 
 
