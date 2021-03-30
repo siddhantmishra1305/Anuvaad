@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E205D7F7261323BF00CEBB90 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E205D7F6261323BF00CEBB90 /* NotesViewModel.swift */; };
 		E2087C5E25FE9FE200ED67FC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2087C5D25FE9FE200ED67FC /* Language.swift */; };
 		E24891B725FACC2200E1FB84 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24891B625FACC2200E1FB84 /* BottomBar.swift */; };
 		E24891BB25FACC3000E1FB84 /* BottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24891BA25FACC3000E1FB84 /* BottomBar.xib */; };
@@ -40,6 +41,7 @@
 		E2CC23862603775200B27CBE /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC23852603775200B27CBE /* NotesViewController.swift */; };
 		E2CC23892603775F00B27CBE /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC23882603775F00B27CBE /* AddNoteViewController.swift */; };
 		E2CC238C26038A0600B27CBE /* UserDefaults + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC238B26038A0600B27CBE /* UserDefaults + Extension.swift */; };
+		E2E46B47260DCA7D00BDDD14 /* SpeechAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E46B46260DCA7D00BDDD14 /* SpeechAnalyzer.swift */; };
 		E2E5E05225FFD58B0011EB3D /* InputSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */; };
 		E2E5E05525FFD5A10011EB3D /* InputSpeechView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */; };
 		E2E5E05825FFD8F30011EB3D /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */; };
@@ -53,6 +55,7 @@
 		42B2B0D16D743E04E2ADD366 /* Pods_Anuvaad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anuvaad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1265F8746C9A876C45DD625 /* Pods-Anuvaad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anuvaad.release.xcconfig"; path = "Target Support Files/Pods-Anuvaad/Pods-Anuvaad.release.xcconfig"; sourceTree = "<group>"; };
 		DF4117B0089E0BA4F665AFEE /* Pods-Anuvaad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anuvaad.debug.xcconfig"; path = "Target Support Files/Pods-Anuvaad/Pods-Anuvaad.debug.xcconfig"; sourceTree = "<group>"; };
+		E205D7F6261323BF00CEBB90 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		E2087C5D25FE9FE200ED67FC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E24891B625FACC2200E1FB84 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		E24891BA25FACC3000E1FB84 /* BottomBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBar.xib; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		E2CC23852603775200B27CBE /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		E2CC23882603775F00B27CBE /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		E2CC238B26038A0600B27CBE /* UserDefaults + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Extension.swift"; sourceTree = "<group>"; };
+		E2E46B46260DCA7D00BDDD14 /* SpeechAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAnalyzer.swift; sourceTree = "<group>"; };
 		E2E5E05125FFD58B0011EB3D /* InputSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechView.swift; sourceTree = "<group>"; };
 		E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSpeechView.xib; sourceTree = "<group>"; };
 		E2E5E05725FFD8F30011EB3D /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
@@ -199,7 +203,6 @@
 				E2E5E0A1260131E00011EB3D /* loading.json */,
 				E29B660C25FA128800D8EBD4 /* AppDelegate.swift */,
 				E29B661225FA128800D8EBD4 /* Main.storyboard */,
-				E2E5E09C260125A30011EB3D /* Animations */,
 				E24891C625FB471700E1FB84 /* Extensions */,
 				E29B662A25FAA32700D8EBD4 /* Others */,
 				E29B662925FAA31800D8EBD4 /* Controller */,
@@ -239,6 +242,7 @@
 			children = (
 				E2811D3125FBA75800891221 /* TranslationViewModel.swift */,
 				E2E5E05A25FFDC360011EB3D /* SpeechViewModel.swift */,
+				E205D7F6261323BF00CEBB90 /* NotesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -263,6 +267,7 @@
 				E29B661725FA128900D8EBD4 /* LaunchScreen.storyboard */,
 				E29B661A25FA128900D8EBD4 /* Info.plist */,
 				E2811D2025FB6EFA00891221 /* Constants.swift */,
+				E2E46B46260DCA7D00BDDD14 /* SpeechAnalyzer.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -300,13 +305,6 @@
 				E2E5E05425FFD5A10011EB3D /* InputSpeechView.xib */,
 			);
 			path = InputSpeechView;
-			sourceTree = "<group>";
-		};
-		E2E5E09C260125A30011EB3D /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animations;
 			sourceTree = "<group>";
 		};
 		FA1FD51B5780C75B4BF46090 /* Pods */ = {
@@ -449,6 +447,7 @@
 				E24891C825FB473500E1FB84 /* UIView + Extension.swift in Sources */,
 				E2811D2E25FBA70E00891221 /* TranslatedResponse.swift in Sources */,
 				E2CC237C26036DDD00B27CBE /* NotesCell.swift in Sources */,
+				E2E46B47260DCA7D00BDDD14 /* SpeechAnalyzer.swift in Sources */,
 				E24891B725FACC2200E1FB84 /* BottomBar.swift in Sources */,
 				E2811D2125FB6EFA00891221 /* Constants.swift in Sources */,
 				E2E5E06125FFF6900011EB3D /* UIImage+Extension.swift in Sources */,
@@ -465,6 +464,7 @@
 				E2CC23862603775200B27CBE /* NotesViewController.swift in Sources */,
 				E2CC23892603775F00B27CBE /* AddNoteViewController.swift in Sources */,
 				E2811D3625FBAAD900891221 /* LanguageViewController.swift in Sources */,
+				E205D7F7261323BF00CEBB90 /* NotesViewModel.swift in Sources */,
 				E2811D3225FBA75800891221 /* TranslationViewModel.swift in Sources */,
 				E2CC2380260371E600B27CBE /* Note.swift in Sources */,
 				E2534068260480CD0070CD06 /* Date + Extension.swift in Sources */,

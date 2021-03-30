@@ -16,11 +16,23 @@ class InputSpeechView: UIView {
     
     let animationView = AnimationView()
     
+    
+    func stopRecordingAnimation(){
+        recordBtn.setImage(UIImage(systemName: "record.circle"), for: .normal)
+        recordBtn.setTitle(nil, for: .normal)
+        stopAnimating()
+    }
+    
+    func startRecordingAnimation(){
+        recordBtn.setImage(nil, for: .normal)
+        recordBtn.setTitle("Stop", for: .normal)
+        startAnimating()
+    }
+    
     func startAnimating(){
-        
         let animation = Animation.named("loading")
         animationView.animation = animation
-        animationView.contentMode = .scaleAspectFit
+        animationView.contentMode = .scaleToFill
         animationView.frame.size = recordingAnimationView.frame.size
         recordingAnimationView.addSubview(animationView)
         animationView.loopMode = .loop

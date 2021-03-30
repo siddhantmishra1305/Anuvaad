@@ -10,7 +10,7 @@ import UIKit
 class BaseViewController: UIViewController {
     
     var bottomTabBar: BottomBar! = Bundle.main.loadNibNamed("BottomBar", owner: self, options: nil)?.first as? BottomBar
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let view = Bundle.main.loadNibNamed("BottomBar", owner: self, options: nil)?.first as? BottomBar{
@@ -47,7 +47,6 @@ class BaseViewController: UIViewController {
     }
     
     @objc public func home(_sender: UIButton) {
-
         
         if let vc =  self.navigationController?.hasViewController(ofKind:HomeViewController.self){
             self.navigationController?.popToViewController(vc, animated: false)
@@ -60,12 +59,17 @@ class BaseViewController: UIViewController {
     
     
     @objc public func fav(_sender: UIButton) {
-
-
+        if let vc =  self.navigationController?.hasViewController(ofKind:NotesViewController.self){
+            self.navigationController?.popToViewController(vc, animated: false)
+        }else{
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let notesVC = storyBoard.instantiateViewController(withIdentifier: "NotesViewController") as! NotesViewController
+            self.navigationController?.pushViewController(notesVC, animated: false)
+        }
     }
     
     @objc public func speech(_sender: UIButton) {
- 
+        
         if let vc =  self.navigationController?.hasViewController(ofKind: SpeechViewController.self){
             self.navigationController?.popToViewController(vc, animated: false)
         }else{
@@ -76,7 +80,7 @@ class BaseViewController: UIViewController {
     }
     
     @objc public func settings(_sender: UIButton) {
-
+        
     }
     
 }

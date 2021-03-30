@@ -22,20 +22,15 @@ class SpeechViewController: BaseViewController {
     
     var outputView  = Bundle.main.loadNibNamed("InputView", owner: self, options: nil)?.first as! InputView
     var ipView = Bundle.main.loadNibNamed("InputSpeechView", owner: self, options: nil)?.first as! InputSpeechView
-    
-    var speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"))
+
     
     var sourceLanguage : Language?{
         didSet{
-            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: sourceLanguage?.code ?? "en-US"))
+            SpeechAnalyzer.sharedInstance.language = sourceLanguage?.code ?? "en-US"
         }
     }
     
     var targetLanguage : Language?
-    
-    var recognitionRequest      : SFSpeechAudioBufferRecognitionRequest?
-    var recognitionTask         : SFSpeechRecognitionTask?
-    let audioEngine             = AVAudioEngine()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +40,6 @@ class SpeechViewController: BaseViewController {
         
         speechVM.outputViewSetup(outputView: outputView, translatedView: translatedOutputView, vc: self)
         speechVM.inputViewSetup(inputView: ipView, parentView: speechView, vc: self)
-        speechRecognizer?.delegate = self
         
         sourceLanguage = translationVM.getFilterLanguage(name: "English")!
         targetLanguage = translationVM.getFilterLanguage(name: "Hindi")!
@@ -99,93 +93,29 @@ extension SpeechViewController {
 
 //MARK: InputView button action
 extension SpeechViewController {
-    
-    func startRecording() {
-        
-        // Clear all previous session data and cancel task
-        if recognitionTask != nil {
-            recognitionTask?.cancel()
-            recognitionTask = nil
-        }
-        
-        // Create instance of audio session to record voice
-        let audioSession = AVAudioSession.sharedInstance()
-        do {
-            try audioSession.setCategory(AVAudioSession.Category.record, mode: AVAudioSession.Mode.measurement, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
-            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
-        } catch {
-            print("audioSession properties weren't set because of an error.")
-        }
-        
-        self.recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
-        
-        let inputNode = audioEngine.inputNode
-        
-        guard let recognitionRequest = recognitionRequest else {
-            fatalError("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
-        }
-        
-        recognitionRequest.shouldReportPartialResults = true
-        
-        self.recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
-            
-            var isFinal = false
-            
-            if result != nil {
-                
-                self.ipView.speechText.text = result?.bestTranscription.formattedString
-                isFinal = (result?.isFinal)!
-            }
-            
-            if error != nil || isFinal {
-                
-                self.audioEngine.stop()
-                inputNode.removeTap(onBus: 0)
-                
-                self.recognitionRequest = nil
-                self.recognitionTask = nil
-                
-                self.ipView.recordBtn.isEnabled = true
-            }
-        })
-        
-        let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
-            self.recognitionRequest?.append(buffer)
-        }
-        
-        self.audioEngine.prepare()
-        
-        do {
-            try self.audioEngine.start()
-        } catch {
-            print("audioEngine couldn't start because of an error.")
-        }
-        
-        print("Say something, I'm listening!")
-    }
-    
+
     @objc public func record(_sender: UIButton) {
-        if audioEngine.isRunning {
-            self.audioEngine.stop()
-            self.recognitionRequest?.endAudio()
-            self.ipView.recordBtn.isEnabled = false
-            self.ipView.recordBtn.setImage(UIImage(systemName: "record.circle"), for: .normal)
-            self.ipView.recordBtn.setTitle(nil, for: .normal)
+        if SpeechAnalyzer.sharedInstance.audioEngine.isRunning {
+            SpeechAnalyzer.sharedInstance.stopRecording()
             startRecordingGIF(status: false)
         } else {
-            self.startRecording()
-            self.ipView.recordBtn.setImage(nil, for: .normal)
-            self.ipView.recordBtn.setTitle("Stop", for: .normal)
             startRecordingGIF(status: true)
+            SpeechAnalyzer.sharedInstance.startRecording {[weak self] (text, error) in
+                if let err = error{
+                    self?.startRecordingGIF(status: false)
+                    self?.ipView.speechText.text = err.localizedDescription
+                }else{
+                    self?.ipView.speechText.text = text
+                }
+            }
         }
     }
     
     func startRecordingGIF(status:Bool){
         if status{
-            self.ipView.startAnimating()
+            self.ipView.startRecordingAnimation()
         }else{
-            self.ipView.stopAnimating()
+            self.ipView.stopRecordingAnimation()
             getTranslation()
         }
     }
