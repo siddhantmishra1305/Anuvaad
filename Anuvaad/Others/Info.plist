@@ -4,10 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Your microphone will be used to record your speech when you press the "Start Recording" button.</string>
-    <key>NSSpeechRecognitionUsageDescription</key>
-    <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your microphone will be used to record your speech when you press the &quot;Start Recording&quot; button.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,8 +20,8 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-    <key>UIUserInterfaceStyle</key>
-    <string>Light</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -32,6 +32,11 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>metropolis.regular.otf</string>
+		<string>metropolis.medium.otf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

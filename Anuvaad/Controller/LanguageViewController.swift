@@ -55,7 +55,6 @@ extension LanguageViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         let view = UIView()
         view.backgroundColor = .clear
         return view

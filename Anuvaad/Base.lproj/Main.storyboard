@@ -9,6 +9,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="metropolis.medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="metropolis.regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="NPj-HS-UJe">
@@ -29,7 +37,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feY-Mv-kF3">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="55"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="English">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +58,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7j-Lp-mfI">
                                                         <rect key="frame" x="256" y="0.0" width="118" height="55"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Hindi">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,39 +238,35 @@
                                 <rect key="frame" x="0.0" y="250" width="414" height="646"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4dW-6a-hqY">
-                                        <rect key="frame" x="20" y="79" width="374" height="537"/>
+                                        <rect key="frame" x="20" y="74" width="374" height="542"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6r-5W-fwt">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="261.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="264"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-gJ-cbX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="261.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-gJ-cbX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="264"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7A-6P-9SR">
-                                                                <rect key="frame" x="171.5" y="0.0" width="31" height="68.5"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7A-6P-9SR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="76"/>
                                                                 <color key="textColor" name="TextColor"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="r8I-KI-Pph" id="7qc-I7-t54"/>
                                                                 </connections>
                                                             </textField>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter text here" translatesAutoresizingMaskIntoConstraints="NO" id="58y-iB-Pxz">
-                                                                <rect key="frame" x="5" y="88.5" width="364" height="173"/>
+                                                                <rect key="frame" x="0.0" y="91" width="374" height="173"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="scrollIndicatorInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <color key="textColor" name="TextColor"/>
-                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <connections>
                                                                     <outlet property="delegate" destination="r8I-KI-Pph" id="eBd-Ba-rm2"/>
                                                                 </connections>
                                                             </textView>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="58y-iB-Pxz" firstAttribute="leading" secondItem="YiQ-gJ-cbX" secondAttribute="leading" constant="5" id="Aof-Ub-x2p"/>
-                                                            <constraint firstAttribute="trailing" secondItem="58y-iB-Pxz" secondAttribute="trailing" constant="5" id="NlU-2x-gXw"/>
-                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -274,7 +278,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-wr-4tW">
-                                                <rect key="frame" x="0.0" y="275.5" width="374" height="261.5"/>
+                                                <rect key="frame" x="0.0" y="278" width="374" height="264"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njd-Al-1x5">
                                                         <rect key="frame" x="111" y="23" width="152" height="111"/>
@@ -300,10 +304,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="256" translatesAutoresizingMaskIntoConstraints="NO" id="bRN-Ix-soM">
-                                        <rect key="frame" x="20" y="20" width="374" height="34"/>
+                                        <rect key="frame" x="20" y="20" width="374" height="29"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQu-Vn-KV8">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="29"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" name="PrimaryColor"/>
                                                 <state key="normal" image="chevron.down" catalog="system"/>
@@ -313,8 +317,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjX-Rb-ATb">
-                                                <rect key="frame" x="315" y="0.0" width="59" height="34"/>
+                                                <rect key="frame" x="315" y="0.0" width="59" height="29"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                 <color key="tintColor" name="TextColor"/>
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -464,7 +469,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="kyY-ev-gO9"/>
                                                     <constraint firstAttribute="height" constant="32" id="rc1-wE-E5E"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                 <state key="normal" title="Hindi">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -481,14 +486,16 @@
                                                 <rect key="frame" x="0.0" y="52" width="374" height="288.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-nc-a54">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-nc-a54">
                                                 <rect key="frame" x="149.5" y="360.5" width="75" height="32"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="rr3-Za-LEa"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="y2Y-DI-6UC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                                 <state key="normal" title="English">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>

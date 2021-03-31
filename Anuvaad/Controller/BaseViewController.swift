@@ -22,10 +22,10 @@ class BaseViewController: UIViewController {
         bottomTabBar.speechBtn.addTarget(self, action: #selector(self.speech(_sender:)), for: .touchUpInside)
         bottomTabBar.settingsBtn.addTarget(self, action: #selector(self.settings(_sender:)), for: .touchUpInside)
         
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationItem.setHidesBackButton(true, animated: true)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -81,6 +81,13 @@ class BaseViewController: UIViewController {
     
     @objc public func settings(_sender: UIButton) {
         
+    }
+    
+    
+    deinit {
+        print("Deinit called BaseVC")
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
 }

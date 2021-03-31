@@ -34,6 +34,8 @@
 		E29B662325FA9CF100D8EBD4 /* Language.json in Resources */ = {isa = PBXBuildFile; fileRef = E29B662225FA9CF100D8EBD4 /* Language.json */; };
 		E29B663225FAA5DC00D8EBD4 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B663125FAA5DC00D8EBD4 /* InputView.swift */; };
 		E29B663525FAA5F100D8EBD4 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29B663425FAA5F100D8EBD4 /* InputView.xib */; };
+		E29DFA6D2615036F00C74B8F /* metropolis.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E29DFA6B2615020900C74B8F /* metropolis.regular.otf */; };
+		E29DFA712615040B00C74B8F /* metropolis.medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E29DFA702615040B00C74B8F /* metropolis.medium.otf */; };
 		E2CC23752603367E00B27CBE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CC23742603367E00B27CBE /* launch.png */; };
 		E2CC237C26036DDD00B27CBE /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC237A26036DDD00B27CBE /* NotesCell.swift */; };
 		E2CC237D26036DDD00B27CBE /* NotesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CC237B26036DDD00B27CBE /* NotesCell.xib */; };
@@ -84,6 +86,8 @@
 		E29B662225FA9CF100D8EBD4 /* Language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Language.json; sourceTree = "<group>"; };
 		E29B663125FAA5DC00D8EBD4 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		E29B663425FAA5F100D8EBD4 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		E29DFA6B2615020900C74B8F /* metropolis.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = metropolis.regular.otf; sourceTree = "<group>"; };
+		E29DFA702615040B00C74B8F /* metropolis.medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = metropolis.medium.otf; sourceTree = "<group>"; };
 		E2CC23742603367E00B27CBE /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E2CC237A26036DDD00B27CBE /* NotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
 		E2CC237B26036DDD00B27CBE /* NotesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesCell.xib; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		E29B660B25FA128800D8EBD4 /* Anuvaad */ = {
 			isa = PBXGroup;
 			children = (
+				E29DFA6F261503F600C74B8F /* Fonts */,
 				E2CC23742603367E00B27CBE /* launch.png */,
 				E2E5E0A1260131E00011EB3D /* loading.json */,
 				E29B660C25FA128800D8EBD4 /* AppDelegate.swift */,
@@ -279,6 +284,15 @@
 				E29B663425FAA5F100D8EBD4 /* InputView.xib */,
 			);
 			path = InputView;
+			sourceTree = "<group>";
+		};
+		E29DFA6F261503F600C74B8F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E29DFA702615040B00C74B8F /* metropolis.medium.otf */,
+				E29DFA6B2615020900C74B8F /* metropolis.regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E2CC237926036DBA00B27CBE /* Notes Cell */ = {
@@ -382,7 +396,9 @@
 				E2CC23752603367E00B27CBE /* launch.png in Resources */,
 				E2811D3D25FBD74800891221 /* LanguageCell.xib in Resources */,
 				E29B661625FA128900D8EBD4 /* Assets.xcassets in Resources */,
+				E29DFA6D2615036F00C74B8F /* metropolis.regular.otf in Resources */,
 				E29B661425FA128800D8EBD4 /* Main.storyboard in Resources */,
+				E29DFA712615040B00C74B8F /* metropolis.medium.otf in Resources */,
 				E2E5E0A2260131E00011EB3D /* loading.json in Resources */,
 				E29B663525FAA5F100D8EBD4 /* InputView.xib in Resources */,
 				E2E5E05525FFD5A10011EB3D /* InputSpeechView.xib in Resources */,

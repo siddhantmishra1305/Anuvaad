@@ -63,11 +63,9 @@ class AddNoteViewController: UIViewController {
     @IBAction func recordAudioBtnAction(_ sender: Any) {
         if SpeechAnalyzer.sharedInstance.audioEngine.isRunning {
             SpeechAnalyzer.sharedInstance.stopRecording()
-            
             startRecordingGIF(status: false)
         } else {
             startRecordingGIF(status: true)
-            
             SpeechAnalyzer.sharedInstance.startRecording {[weak self] (text, error) in
                 if let err = error{
                     self?.startRecordingGIF(status: false)
@@ -133,10 +131,26 @@ class AddNoteViewController: UIViewController {
     }
 }
 
-extension AddNoteViewController : UITextViewDelegate{
+extension AddNoteViewController : UITextViewDelegate,UITextFieldDelegate{
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == Constants.placeholder{
             textView.text = nil
         }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if(string == "\n") {
+            textField.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }

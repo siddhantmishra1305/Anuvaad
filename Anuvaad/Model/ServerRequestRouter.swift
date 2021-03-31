@@ -53,7 +53,8 @@ enum ServerRequestRouter{
         let headers = [
             "content-type": "application/x-www-form-urlencoded",
             "accept-encoding": "application/gzip",
-            "x-rapidapi-key": "d104cf1983mshf9c42424657e497p168e11jsn4a67213796a2",
+            "x-rapidapi-key":"e9dc41716fmsh809957099687bb8p1e3681jsn3279975abe4a",
+//            "x-rapidapi-key": "d104cf1983mshf9c42424657e497p168e11jsn4a67213796a2",
             "x-rapidapi-host": "google-translate1.p.rapidapi.com"
         ]
         
