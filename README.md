@@ -3,8 +3,8 @@ An iOS translator that supports more that 40 languages.
 
 # Features
  1. Supports over 40 translation.
- 2. Write notes using speech.
- 3. Translate using speech.
+ 2. Write notes using voice input.
+ 3. Translate using voice input.
  4. Using Google Translate API
 
 # Screenshots
